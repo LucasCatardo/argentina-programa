@@ -9,6 +9,7 @@ export class ExperienciaComponent implements OnInit {
 
   public imgINTI: string = "assets/images/INTI.png";
   public imgDigitalHouse: string = "assets/images/DigitalHouse.png";
+  public imgEsur: string = "assets/images/Esur.png";
 
   constructor() { }
 
