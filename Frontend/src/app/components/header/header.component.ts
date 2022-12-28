@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -14,9 +15,13 @@ export class HeaderComponent implements OnInit {
   public imgInstagram: string = "assets/images/Instagram.png";
   public imgGithub: string = "assets/images/Github.png";
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  login() {
+    this.router.navigate(['/login']);
   }
 
 }
